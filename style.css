@@ -157,6 +157,3 @@ input[type="email"]:invalid + span::after{
     font-size: .75rem;
     position: absolute;
 }
-.login-message{
-    color:
-}
