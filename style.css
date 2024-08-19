@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'neon_tubesregular';
+    src: url('assets/neon-tubes-webfont.woff2') format('woff2'),
+         url('assets/neon-tubes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hello_denver_display_regulaRg';
+    src: url('assets/hellodenverdisplayregular_v1.6-webfont.woff2') format('woff2'),
+         url('assets/hellodenverdisplayregular_v1.6-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    font-size: 1rem;
+}
+body {
+    background-color: rgb(248, 212, 70);
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+  button,
+  input,
+  select {
+    font-family: inherit;
+    font-size: 100%;
+    /* width: 150px; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+    background-color:hwb(240 8% 96%);
+    color:rgb(248, 198, 0);
+}
+
+.side-section{
+    width: 40%;
+    height: 100%;
+    background: url("assets/pexels-apasaric-2603464.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+h1{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    text-align: center;
+    color:rgb(248, 198, 0);
+    position: absolute;
+    top:10rem;
+    min-height: 8rem;
+    line-height: 8rem;
+    font-size: 5rem;
+    font-family: "hello_denver_display_regulaRg";
+}
+.main-section{
+    width:60%;
+    height: 100%;
+    background-color:  rgb(0, 0, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(248, 198, 0);
+}
+.quote{
+    padding:40px;
+    color:rgb(248, 233, 174);
+    font-style: italic;
+    font-size: 20px;
+}
+.main-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.input-section{
+    background-color: hwb(240 5% 96%);
+    border-radius: 3px;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px yellow;
+    
+}
+h2{
+    flex: 0 0 100%;
+}
+
+.input-section > div{
+    flex:0 0 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+input{
+    height: 30px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+input:invalid{
+    border:2px solid red;
+}
+input:valid{
+    border:2px solid green;
+}
+input:focus{
+    border: 2px solid blue;
+}
+button{
+    background-color: rgb(248, 198, 0);
+    color:rgb(0, 0, 11);
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 10px ;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+input[type="password"]{position: relative;
+}
+input[type="password"]:invalid +span::after{
+    content: "Passwords doesn't match";
+    color:red;
+    margin-top: 3px;
+    font-size: .75rem;
+    position: absolute;
+}
+input[type="email"]{position: relative;}
+input[type="email"]:invalid + span::after{
+    content: "email@email.com";
+    color:red;
+    margin-top: 3px;
+    font-size: .75rem;
+    position: absolute;
+}
+.login-message{
+    color:
+}
